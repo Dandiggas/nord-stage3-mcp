@@ -1,0 +1,19 @@
+# Publish only the implementation, tests and usage documentation.
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/nord_mcp.py
+!/zevs.py
+!/inventory.py
+!/dependencies.py
+!/gig_prep.py
+!/layout_restore.py
+!/program_edit.py
+!/song_library.py
+!/song_patch.py
+!/tests/
+/tests/*
+!/tests/test_*.py
+__pycache__/
+*.pyc
