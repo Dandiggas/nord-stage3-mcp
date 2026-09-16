@@ -1,5 +1,9 @@
 # Nord Stage 3 MCP
 
+![Your Nord. In conversation. Prepare, edit and restore with Nord Stage 3 MCP.](assets/readme-banner.png)
+
+**Prepare your keyboard through conversation. Review every change before it happens.**
+
 Control a Nord Stage 3 from an AI assistant through the Model Context Protocol
 (MCP). Inspect sounds, prepare gig layouts, edit supported patch settings and
 restore backed-up programs. Changes require explicit approval and read-back checks.
@@ -7,6 +11,23 @@ restore backed-up programs. Changes require explicit approval and read-back chec
 This repository contains the server implementation and regression tests. It does
 not contain research scripts, disassembly, personal patches, sample libraries,
 recordings, setlists or development-session history.
+
+## What you can ask your assistant
+
+> “Put these songs in order using my saved patches. Show me the plan first.”
+>
+> “Make a copy with piano below C5, brass above, and strings on the mod wheel.”
+>
+> “Back up these program banks, then show me how to restore the previous layout.”
+
+These are example requests for an MCP-compatible assistant. It translates them
+into supported tool calls, asks for missing musical choices and presents the
+changes for approval. The server does not generate new samples or decide which
+sound is right for a song.
+
+**Verified on real hardware:** 38 gig patches copied and checked; two program
+banks restored and returned with all 325 programs verified. The standalone
+implementation passes 93 automated tests.
 
 ## Requirements and installation
 
